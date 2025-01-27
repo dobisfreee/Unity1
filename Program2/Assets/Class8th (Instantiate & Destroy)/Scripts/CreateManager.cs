@@ -5,15 +5,33 @@ using UnityEngine;
 public class CreateManager : MonoBehaviour
 {
     private GameObject clone;
+    private float time; 
+    [SerializeField] float createTime = 3; 
     [SerializeField] GameObject unit;
-    // 포인터 변수로 unit의 위치값을 0,0,-5 로 이동시키자 
+    [SerializeField] Transform [ ] transformList;
 
     void Start()
     {
-       clone = Instantiate(unit);
-
-       clone.transform.position = new Vector3(0, 0, -5);
+      
     }
 
-   
+    private void Update()
+    {
+        time += Time.deltaTime;
+
+        if(time >= createTime)
+        {
+            Create();
+
+            time = 0;
+        }
+    }
+
+    private void Create()
+    {
+        if(clone == null)
+        {
+        clone = Instantiate(unit, transformList[Random.Range(0, transformList.Length)]);
+        }
+    }
 }
