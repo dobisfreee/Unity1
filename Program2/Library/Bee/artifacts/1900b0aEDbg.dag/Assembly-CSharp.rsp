@@ -352,6 +352,8 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Class10th (Ray Cast)/Scripts/Picking.cs"
+"Assets/Class10th (Ray Cast)/Scripts/View.cs"
 "Assets/Class3th (Script)/Scripts/Sphere.cs"
 "Assets/Class4th (Input System)/Scripts/Keyboard.cs"
 "Assets/Class6th (Prefab System)/Scripts/Function.cs"
